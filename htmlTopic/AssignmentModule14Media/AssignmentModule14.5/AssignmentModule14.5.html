@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div style="height: 300px; width: 400px; background-color:aquamarine">
+        <h3 style="text-align: center;">Sign Up Form</h3>
+        <form>
+            <label for="name"></label>
+            <input type="text" name="Name" id="name" placeholder="First Name" minlength="3" required>
+
+            <label for="name"></label>
+            <input type="text" name="Name" id="name" placeholder="Last Name" minlength="3" required> <br>
+
+            <label for="age"></label>
+            <input type="number" id="age" placeholder="Age" min="0" max="150">
+
+            <label for="DOB"></label>
+            <input type="datetime-local" name="Date of birth" id="DOB" placeholder="Enter Your DOB"> <br>
+
+            <label for="mobile"></label>
+            <input type="number" name="mobile" id="mobile" placeholder="Mobile Number">
+
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Email"> <br>
+
+            <label for="password"></label>
+            <input type="password" name="Password" id="pw" placeholder="Password"> <br>
+
+            <label for="Cpassword"></label>
+            <input type="password" name="confirm password" id="Cpw" placeholder="confirm Password"> <br>
+
+            
+            <label for="gender1"> <input type="radio" name="gender" id="gender1">Male</label>
+            <label for="gender2"> <input type="radio" name="gender" id="gender2">Female</label>
+            <label for="gender3"> <input type="radio" name="gender" id="gender3">Not Prefer To say</label> <br>
+                
+            <input type="checkbox" name="Term" id="term">
+            <label for="term">I agree the Term of Use and Privacy Policies.</label> <br>
+            <input type="submit" value="submit">
+            <input type="reset">
+        </form>
+        <p>Already have account?<a href="SignINPage.html" style="color: blue;">Login Now</a></p>
+    
+    </div>
+</body>
+</html>

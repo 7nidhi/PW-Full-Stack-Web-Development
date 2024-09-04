@@ -1,0 +1,52 @@
+/*#rotate{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    margin-left: 300px;
+    transform: scale(2) rotate(20deg) skew(10deg) translate(100px,50px); 
+    
+}
+*/
+
+#rotate{
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    background-color: blue  ;
+    /*transition: background-color;
+    transition-duration: 3s;
+    /*transition-delay: 2s; 
+    transition-timing-function: ease-in; 
+    transition: background-color ease-in 2s ; 
+    transition: width 5s ease-out 0s, background-color ease-in 2s ; */
+}
+#rotate:hover{
+    /*background-color: red; 
+    width: 500px; */
+    animation-name: widthandcolor;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-iteration-count: 3;
+
+}
+@keyframes widthandcolor {
+    0%{
+        width: 100px;
+        background-color: red;
+    }
+
+    50%{
+        width: 250px;
+        background-color:brown;
+    }
+    100%{
+        width: 500px;
+        background-color: pink;
+    }
+}
+
+
+h1{
+    transform: rotateX(180deg);
+}
+    

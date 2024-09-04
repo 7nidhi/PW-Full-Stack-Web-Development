@@ -1,0 +1,49 @@
+#parent{
+    width: 600px;
+    background-color:aquamarine;
+    padding: 12px;
+    border: 1px solid greenyellow;
+    display: grid;
+    grid-template-columns:  1fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header header header header "
+    "menu content content content content ads"
+    "menu content content content content ads"
+    "menu content content content content ads"
+    "footer footer footer footer footer footer ";
+}
+.header{
+    grid-area: header;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+    border: 1px solid black;
+    background-color:darkgoldenrod;
+    text-align: center;
+
+}
+.menu{
+    grid-area: menu;
+    border: 1px solid black;
+    background-color:darkseagreen;
+    text-align: center;
+    font-size: small;
+}
+.ads{
+    grid-area: ads;
+    border: 1px solid black;
+    background-color:cyan;
+    text-align: center;
+    font-size: small;
+    padding: 25px;
+}
+.content{
+    grid-area: content;
+    border: 1px solid black;
+    background-color:beige;
+    text-align: center;
+    padding: 25px;
+}
