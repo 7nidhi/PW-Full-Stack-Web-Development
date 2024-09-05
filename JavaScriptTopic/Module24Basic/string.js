@@ -8,3 +8,7 @@ let multilineString=`I am Nidhi
 from Banaras
 I live in Pune`;
 console.log(multilineString);
+
+//checking type of data type "typeof()"
+
+console.group(typeof(multilineString));
