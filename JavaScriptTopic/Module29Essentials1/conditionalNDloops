@@ -1,0 +1,43 @@
+Lesson : Condition and Loops
+
+Condition: 
+
+ Evaluated to be either true or false using boolean values.
+
+ 
+
+if Statement
+Basic Form: Executes code block if condition is true.
+Syntax Example: if (condition) { // code block }
+if-else Statement
+Description: Executes code block if condition is true, otherwise executes an alternative code block.
+Syntax Example: if (condition) { // code block } else { // alternative code block }
+Nested if Statement
+Description: if-else statements within another if-else statement.
+Syntax Example: if (condition1) { if (condition2) { // code block } }
+if else if Ladder
+Description: Allows chaining multiple conditions together.
+Syntax Example: if (condition1) { // code block } else if (condition2) { // code block }
+Loops
+
+ 
+
+For Loop: Repeats code until the condition is false.
+Syntax: for (initial; condition; update) { // code }
+While Loop: Runs code as long as the condition is true.
+Do-While Loop: Runs code at least once, then continues if the condition is true.
+ 
+
+Break and Continue
+ 
+
+Break: Explicitly terminates the loop.
+Continue: Skips the current iteration and proceeds to the next.
+ 
+
+Switch Statement
+With & Without Break: Evaluates multiple cases; uses break to prevent fall-through.
+With Return: Uses return in cases for functions, exiting the switch and returning a value.
+ 
+
+
