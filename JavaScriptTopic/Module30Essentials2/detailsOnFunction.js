@@ -12,7 +12,7 @@ console.log(ans);
 
 //2 parameter
 
-function add(x, y=5){  //we can define default parameter if we do not pass manualy any parameter in argument
+function add(x, y=5){  //we can define default parameter if we do not pass manualy any parameter in argument.
     return x+y;
 }
 
