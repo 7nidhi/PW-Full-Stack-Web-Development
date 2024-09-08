@@ -11,5 +11,5 @@ console.log(d.getHours());
 //string interpolation
  
 let x=10;
-let ans=`value of is x is ${x}`  //templeted string
+let ans=`value of is x is ${x}`  //Template string
 console.log(ans); 
