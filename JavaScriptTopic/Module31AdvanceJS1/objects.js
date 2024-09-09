@@ -92,7 +92,7 @@ x.a=90;
 console.log(x);
 
 const y={a:10};
-Object.defineProperty(y,'a',{configurable:false, writable:false}); //can not delete, can not update,can not add
+Object.defineProperty(y,'a',{configurable:false, writable:false}); //can not delete, can not update,can not add 8
 delete y.a;
 y.a=90;
 console.log(y);
