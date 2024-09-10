@@ -83,7 +83,6 @@ function fact(){
     console.log(" the value of a is:",a);
     var a=10;
     console.log("value of a is",a);
-
 }
 fact();
 
