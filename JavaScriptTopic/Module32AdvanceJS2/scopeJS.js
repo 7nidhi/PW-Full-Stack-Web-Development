@@ -85,3 +85,6 @@ function fact(){
     console.log("value of a is",a);
 }
 fact();
+
+//Strict mode-stop to making autoglobal variable
+"use strict";
