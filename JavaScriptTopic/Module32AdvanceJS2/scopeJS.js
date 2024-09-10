@@ -85,4 +85,3 @@ function fact(){
     console.log("value of a is",a);
 }
 fact();
-
