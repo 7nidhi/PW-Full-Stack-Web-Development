@@ -33,6 +33,20 @@ console.log(y);
 /* Hoisting-
 Hoisting is a consequesnce of the scoping  mechanism of JS. because of the fact that JS executed  your code
 in phase 2, a lots of variables are already known during the phase 1, and  then they are accessed in phase2.
-So it
+So it looks like to a lots of people that JS knows about a few varibales before thir declaration.
+And indeed, it is true, becuase during phase 1 all the formal declarations are read, so js indeed knows about
+the variable before execution phase. and the mechanism of knowing varible before their declaration line is termed
+as 'Hoisting'.
+This word is not an actual word present in the official ECMA script docs. The JS community came up with the one
+word definition for this consequesnce.
+
+Function Expression-
+we can store a function in variable.
+we are creating a function but first valid token is not a function keyword, hence we call this type of instruction
+as function expression.
 */
+
+const myfun=function fun(i){
+    console.log("calling",x);
+}
 
