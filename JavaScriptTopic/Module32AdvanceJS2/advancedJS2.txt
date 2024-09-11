@@ -1,0 +1,86 @@
+Lesson : Advanced JavaScript Part 2
+
+Introduction to Object Constructor:
+
+An object constructor is a function template for creating objects.
+It allows the creation of multiple objects with similar properties.
+Reduces the need to create individual objects manually.
+Objects can be instantiated with unique data.
+Creating Object Constructor:
+
+Define a function to act as a constructor.
+Conventionally, the constructor function’s name is capitalized.
+Define properties and methods within the constructor.
+Ensures properties and methods are shared by all instances.
+Understanding this Keyword in Object Constructor:
+
+this refers to the current instance of the object.
+Used to assign values to the properties of the newly created object.
+Ensures each instance has its own set of properties.
+Essential for differentiating between properties of different instances.
+Properties and Methods:
+
+Properties define object characteristics (e.g., name, age).
+Methods define object behavior (e.g., sayHello function).
+Both are defined within the constructor function.
+Ensure all instances have the same properties and methods.
+Creating Instances of Objects:
+
+Use the new keyword followed by the constructor function.
+Pass required arguments to the constructor.
+Allocates memory for a new object.
+Sets up this keyword reference within the constructor function.
+Accessing Object Properties and Methods:
+
+Use dot notation to access properties (e.g., person1.name).
+Invoke methods using dot notation (e.g., person1.sayHello()).
+Ensures easy access to properties and methods of an object instance.
+Similar to accessing properties and methods in regular objects.
+Introduction to Prototype:
+
+The prototype is an object that enables inheritance.
+Methods and properties added to the prototype are shared across instances.
+Each function has a prototype property.
+Prototypes allow objects to inherit features from one another.
+Prototype Property vs. __proto__:
+
+The prototype property is used in constructor functions.
+__proto__ accesses the prototype of an instance.
+Recommended to use Object.getPrototypeOf() instead of __proto__.
+Helps in defining and accessing inherited properties and methods.
+Prototypical Inheritance:
+
+Allows objects to inherit properties and methods from other objects.
+Every object in JavaScript has a prototype.
+JavaScript looks up the prototype chain to find properties or methods.
+Enables objects to share common functionalities.
+Adding Properties and Methods to Prototype:
+
+Extend functionality by adding properties and methods to the prototype.
+Modifications affect all instances of the constructor function.
+Cannot directly add properties or methods to a constructor function.
+Use prototypes to enhance and modify instance behaviors.
+Polymorphism and Prototype Chains:
+
+Polymorphism allows different objects to be treated as instances of a common superclass.
+Achieved through inheritance and method overriding.
+Prototype chaining allows objects to inherit properties and methods.
+Ensures method and property lookups traverse up the prototype chain.
+Introduction to Polyfills:
+
+Polyfills provide modern functionality on older browsers.
+Ensure compatibility across different browser environments.
+Reduce the need for browser-specific workarounds.
+Enhance development efficiency by enabling consistent code.
+Writing Custom Polyfills:
+
+Create custom polyfills for unsupported features in older browsers.
+Define fallback implementations for modern methods.
+Check for native support before defining a polyfill.
+Example: Custom implementation of the includes method for arrays.
+Working with Built-in Polyfills:
+
+Built-in polyfills ensure backward compatibility for older browsers.
+Prefer using libraries like core-js and polyfill.io.
+Simplify the inclusion of polyfills in projects.
+Ensure modern JavaScript features work across different environments.
