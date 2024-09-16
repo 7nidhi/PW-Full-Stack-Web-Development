@@ -43,3 +43,15 @@ There is a keyword in JS called as 'New' which  can help us to create an objet o
 */
 let iphone=new product();
 console.log(iphone);
+
+/*How new keyword work-
+>it creates a brand new plain and absolutelt empty object.
+> it calls gthe constructor of the class and passes the newly created object(not as parameterer)
+but inside a keyowrd called as 'this '.So contructor automatically has access to this keyword and when we call new
+,this keyword has access to the plain object created in step 1 and constuctor now can use this keyoword inside it.
+and then whatever is logic of constructor it is executed.
+> new triggers everything needs to be done for prototype to work.
+> Now , if from a constactor an object is manually returned then this manual returned object is stored in the 
+called varible, otherwise in any case i.e either we dont return anything or return something apart from object,
+constuctor does not  care about it and return the value inside this keyword.
+*/
