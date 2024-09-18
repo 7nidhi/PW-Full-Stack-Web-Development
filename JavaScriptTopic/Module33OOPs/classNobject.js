@@ -3,11 +3,18 @@ Class-  Class is a blueprint on a set of real life entities.
 
 */
 class product{
-    name;
-    price;
-    category;
-    dispription;
-    rating;
+    //price;
+    //name;
+    //category;
+    //dispription;
+    //rating;
+    constructor(productName,productPrice,productCategory,producteDecription,productRating){
+        this.name=productName;
+        this.price=productCategory;
+        this.category=productCategory;
+        this.dispription=producteDecription;
+        this.rating=productRating;
+    }
 
     addToCart(){
         console.log("Product is added");
@@ -41,7 +48,7 @@ Objects-
 Using classes the final entity that we will develop is called as 'Object'.
 There is a keyword in JS called as 'New' which  can help us to create an objet of a class. 
 */
-let iphone=new product();
+let iphone=new product("Iphone",150000,"IoS","This is very famous phone",4.3);
 console.log(iphone);
 
 /*How new keyword work-
@@ -55,3 +62,10 @@ and then whatever is logic of constructor it is executed.
 called varible, otherwise in any case i.e either we dont return anything or return something apart from object,
 constuctor does not  care about it and return the value inside this keyword.
 */
+
+/* This keyword in JS-
+>this as keywordis available  to be accessed in any fucntion or even outside any function, and in class as well.
+
+
+*/
+
