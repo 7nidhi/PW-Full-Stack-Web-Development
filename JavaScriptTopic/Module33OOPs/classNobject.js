@@ -65,7 +65,33 @@ constuctor does not  care about it and return the value inside this keyword.
 
 /* This keyword in JS-
 >this as keywordis available  to be accessed in any fucntion or even outside any function, and in class as well.
+>if we can use this keyowrd anywhere, then whats the value of stored inside this?
+--in most of the cases this refers to the call site.
+>what is call site?
+--Call site can be an obeject or any position or may be even new keyword. it refers to the entity which is calling 
+this keyword.
+>"Note"-It has an exception, this keyword will not refer to call site if it used insode an arrow function.
+In case of arrow function, this is resolved using lexical scoping.
+let obj={
+    x=10;
+    y=30;
+    fn:fucntion(){
+       const arrow=()=>{
+        console.log(this.x,this.y);
+        }
+        arrow();
+    }
+}
 
-
+--In this code, this present inside the arrow fucntion, hence we will resolve it lexically.
+=Is this defined in the scope of arrow function? No.
+=we go one scope up, i.e. inside function fn.
+=is this defineed inside fn?yes because fn is a normal fucntion,we have a defination of this inside it,
+which is call site.
+=who is call site? Obj object, which is responsible to trigger fn is the call site.
+=hence this refer to obk object and when we call arrow function we get output as 10,30.
+That means , when we make new object using New keyword,then new keyowrd creates a plain object and 
+this plain object is the call site for the constructor hence this keyword refers to the plain object altogether.
 */
+
 
