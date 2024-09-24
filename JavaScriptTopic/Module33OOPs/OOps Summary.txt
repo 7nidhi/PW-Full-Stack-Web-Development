@@ -1,0 +1,91 @@
+Lesson : Summary
+
+Imperative Programming:
+
+Imperative programming involves providing the computer with a sequence of precise instructions to be executed in a specific order.
+Some programming languages follow more than one programming paradigm, called multiple paradigm programming languages.
+Programming Paradigms:
+
+Paradigms encompass various approaches and styles by which a program or programming language can be structured.
+Each paradigm comprises specific structures, features, and perspectives on addressing typical programming challenges..
+Functional Programming:
+
+Extends the concept of functions further, treating them as first-class citizens.
+Languages like C++, Java, and JavaScript utilize functional programming.
+Declarative Programming:
+
+Focuses on specifying what needs to be done, not how to do it.
+Languages like HTML, SQL, and CSS are declarative in nature.
+Object-Oriented Programming (OOP):
+
+OOP stands for Object-Oriented Programming, which is one of the widely accepted programming paradigms.
+OOP partitions concern into entities represented as objects, encapsulating a specific collection of information and behaviors.
+Key OOP Concepts:
+
+Encapsulation: Bundling data and related behaviors into objects and providing methods to interact with the object.
+Inheritance: Allows classes to inherit properties and behaviors from other classes, forming a hierarchy.
+Polymorphism: Enables objects of different classes to be treated as instances of a common superclass.
+Abstraction: Focuses on representing essential features of objects while hiding unnecessary details.
+
+
+Importance of OOP:
+
+Promotes modular design, enhancing reusability and maintainability.
+Provides a structured approach to code organization.
+Aligns with the real world by allowing developers to model objects, relationships, and behaviors.
+Introduction to Constructor Functions:
+
+>Constructor functions in JavaScript create objects with similar properties and methods.
+Introduction to Factory Functions:
+
+>Factory functions return objects without using the new keyword.
+Introduction to new Keyword:
+
+>The new keyword in JavaScript is used to create instances of constructor functions.
+Class Syntax
+
+>ES6 introduced classes to provide a more syntactic sugar-like way to define object blueprints, 
+encapsulating data (properties) and behavior (methods) associated with objects.
+
+ 
+
+Class Constructor and Initialization:
+
+The constructor method is a special function called when creating a new object from a class. 
+It initializes the object's properties by taking arguments and assigning them to the object's properties.
+
+Hoisting in Classes:
+
+Unlike functions, class declarations are not hoisted, meaning you cannot use a class before it is declared.
+
+Getters and Setters:
+
+Getters and setters are special methods that control access to and modification of an object's properties. 
+Getters retrieve property values, and setters allow property values to be updated.
+
+Class Inheritance:
+
+Classes can inherit properties and methods from parent classes using the extends keyword, promoting code 
+reusability and creating a hierarchy of related objects.
+
+Method Overriding:
+
+In inheritance, a child class can redefine (override) a method inherited from the parent class, 
+allowing for specialized behavior in child objects.
+
+Static Properties and Methods:
+
+Static properties and methods belong to the class itself, not to individual objects. 
+They are accessed using the class name rather than through object instances.
+
+Syntactic Sugar over Constructor Functions:
+
+Classes offer a cleaner and more readable syntax compared to traditional constructor functions
+for defining object blueprints, making the code more organized and maintainable.
+
+Classical Inheritance vs. Prototypal Inheritance:
+
+Classical inheritance uses classes and follows a strict parent-child hierarchy.
+Prototypal inheritance uses objects, allowing a flexible prototype chain.
+Classical inheritance is simulated using prototypes in JavaScript,
+while prototypal inheritance is the native model.
