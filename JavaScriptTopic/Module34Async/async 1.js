@@ -18,3 +18,8 @@ console.log(mymap(arr,function g(element){  //g() ->call back function
     return element**2;
 }
 ))
+skjbbjk
+dffkvjfke
+djvbvefjkefbe
+dkbjfjef
+
