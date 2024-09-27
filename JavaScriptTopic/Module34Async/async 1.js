@@ -18,7 +18,10 @@ console.log(mymap(arr,function g(element){  //g() ->call back function
     return element**2;
 }
 ))
-//return the fuction
+
+//Disadvantages of call back
+// 1- call back hell(readability problem)- in this call hof in call back
+// 2- inversion of control
 
 
 
