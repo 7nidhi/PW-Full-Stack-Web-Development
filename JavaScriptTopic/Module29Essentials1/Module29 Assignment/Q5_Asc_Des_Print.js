@@ -6,8 +6,8 @@ while(b<=25){
     b++;
 }
 console.log("Descending Order")
-let c=25
-while(c>=1){
-    console.log(c);
-    c--;
+b=25
+while(b>=1){
+    console.log(b);
+    b--;
 }
