@@ -1,0 +1,1 @@
+//Calculate square using arrow function
