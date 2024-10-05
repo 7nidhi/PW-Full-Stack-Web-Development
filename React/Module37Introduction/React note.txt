@@ -1,0 +1,172 @@
+Lesson : Summary
+
+Introduction to React
+ 
+
+What are ReactJS & its features?
+
+ReactJS is a JavaScript library for building user interfaces.
+Features include component-based architecture, virtual DOM for efficient updates, unidirectional data flow, JSX syntax, and strong community support.
+Why did React come into picture?
+
+React was developed to address issues of complex UI development and performance.
+It simplifies the process of building dynamic web applications with interactive UIs.
+The need for reusable components and efficient rendering led to its creation.
+It enables better code maintainability and scalability.
+Facebook introduced React to improve their own web applications' performance.
+Single Page Application (SPA)
+
+SPAs load a single HTML page and dynamically update content as the user interacts with the app.
+They offer a smoother, faster user experience similar to desktop applications.
+React is well-suited for building SPAs due to its efficient updating and rendering capabilities.
+SPAs reduce server load by handling most interactions client-side.
+They often require client-side routing to manage different views within the app.
+Understanding Webpack and Babel
+
+Webpack is a module bundler that compiles JavaScript files and assets into a single bundle.
+Babel is a JavaScript compiler that transforms modern JavaScript code into a backward-compatible version.
+Both tools are essential for setting up a modern React development environment.
+Webpack can handle dependencies, manage assets, and optimize code for production.
+Babel allows the use of modern JavaScript features and JSX in React applications.
+               Understanding the config file of Webpack and Babel
+
+The Webpack config file defines how the bundling process is handled, specifying entry points, output paths, and loaders.
+Babel's config file (usually .babelrc) specifies presets and plugins to transform JavaScript code.
+Config files allow customization and optimization of the build process.
+They are crucial for integrating React development tools and managing different environments.
+Understanding these config files is essential for effective React application development.
+ 
+
+Client and Server Side Application
+Introduction to client side application
+
+Client-side applications run in the user's browser.
+They are responsible for the user interface and user interactions.
+Examples include websites, web apps, and SPAs.
+Client-side code is usually written in JavaScript, HTML, and CSS.
+React is a popular library for building client-side applications.
+Technologies used in client side application & example
+
+HTML, CSS, and JavaScript form the core technologies.
+Libraries and frameworks like React, Angular, and Vue.js enhance development.
+AJAX and Fetch API are used for asynchronous data fetching.
+Examples include Google Maps, Gmail, and Facebook.
+Client-side tools like Webpack and Babel optimize and manage code.
+Introduction to server side application
+
+Server-side applications run on a web server.
+They handle business logic, database interactions, and user authentication.
+Server-side code is written in languages like Node.js, Python, Ruby, and Java.
+They process client requests and send back appropriate responses.
+Server-side applications often interact with databases and external APIs.
+Technologies used in server side application & example
+
+Node.js, Express.js for JavaScript-based server-side applications.
+Django for Python, Ruby on Rails for Ruby, and Spring Boot for Java.
+Databases like MySQL, MongoDB, and PostgreSQL store and manage data.
+RESTful APIs and GraphQL for client-server communication.
+Examples include e-commerce platforms, content management systems, and APIs.
+           Client side vs server side
+
+Client-side handles user interface and interactions; server-side handles data processing and storage.
+Client-side code runs in the browser; server-side code runs on the server.
+Client-side focuses on rendering and user experience; server-side focuses on logic and data management.
+Server-side can handle security and access control; client-side focuses on dynamic content updates.
+Both sides communicate through HTTP requests and responses
+         Using React in client side
+
+React is used to build dynamic and interactive user interfaces.
+It allows the creation of reusable components, enhancing code maintainability.
+React's virtual DOM improves rendering performance.
+It can be integrated with other client-side libraries and frameworks.
+React supports state management and routing for SPAs.
+ 
+
+Setting up React Project
+Setting up development environment for React
+
+Install Node.js and npm (Node Package Manager).
+Install a code editor like Visual Studio Code (VS Code).
+Use terminal or command prompt for running commands.
+Familiarize yourself with version control systems like Git.
+Set up a browser for testing, preferably Chrome with React Developer Tools.
+Starter project with CDN
+
+Use a CDN link to include React and ReactDOM in your HTML file.
+Create a basic HTML file to host the React app.
+Useful for quick prototyping and testing without a build setup.
+Limited functionality compared to a full React project setup.
+Ideal for small projects or learning purposes.
+       Understanding npm and yarn
+Package Managers: npm (Node Package Manager) and yarn are tools used to manage JavaScript packages and dependencies in a project.
+Installation: Both npm and yarn can install, update, and remove packages, but yarn is known for being faster and more reliable.
+Commands: npm uses npm install, while yarn uses yarn add to add packages.
+Lock Files: npm uses package-lock.json and yarn uses yarn.lock to ensure consistent installations across different environments.
+Popularity: npm comes with Node.js by default, while yarn is an alternative created by Facebook to address some of npm's shortcomings.
+        Create React App
+Purpose: Create React App (CRA) is a tool to set up a new React project with a default configuration.
+Command: The main command is npx create-react-app my-app, which creates a new project in the my-app directory.
+Configuration: CRA abstracts away the configuration, so you don't need to deal with Webpack, Babel, etc., out of the box.
+Scripts: It provides useful scripts like start, build, and test for common development tasks.
+Customization: While CRA is opinionated, you can "eject" to customize the underlying configurations if needed.
+         Understanding the File Structure
+Public Folder: Contains static files like index.html and images that won't be processed by Webpack.
+Src Folder: Contains the source code, including index.js and App component.
+Node Modules: A directory where all installed dependencies are stored.
+Package Files: package.json, package-lock.json, and/or yarn.lock manage project dependencies and versions.
+ReadMe and Config Files: Includes README.md for project documentation and various config files like .gitignore.
+          Node Modules
+Directory: A folder where all project dependencies are stored.
+Sub-dependencies: Contains all nested dependencies required by your project's packages.
+Size: Can become quite large because it includes every package and its dependencies.
+Generated: Created when running npm install or yarn install.
+Not Versioned: Generally added to .gitignore to avoid pushing to version control.
+        Package.json
+Metadata: Contains metadata about the project like name, version, and author.
+Dependencies: Lists project dependencies and their required versions.
+Scripts: Defines scripts for running tasks like start, build, and test.
+Configuration: May contain configuration settings for project tools and services.
+DevDependencies: Specifies dependencies needed only for development, not production.
+         Package-lock.json
+Exact Versions: Records the exact versions of installed dependencies.
+Consistency: Ensures consistent installs across different environments and machines.
+Performance: Improves installation performance by using the locked versions.
+Auto-generated: Automatically created and updated by npm.
+Integrity: Includes checksums to verify package integrity.
+           Yarn.lock
+Dependency Tree: Records the full dependency tree with exact versions.
+Consistency: Ensures the same dependency versions are installed across environments.
+Performance: Speeds up installation by using cached versions and avoiding re-downloading.
+Conflict Resolution: Handles conflicts between different versions of dependencies.
+Compatibility: Works with package.json to manage dependencies efficiently.
+          Package.json vs package-lock.json
+Purpose: package.json lists dependencies with version ranges, while package-lock.json locks them to specific versions.
+Creation: package.json is created manually; package-lock.json is auto-generated.
+Role: package.json is for humans to read and edit; package-lock.json is for npm to manage installs.
+Updates: package.json changes when you add/remove packages; package-lock.json updates with any installation.
+Version Control: Both should be committed to version control to ensure consistent environments.
+     Useful VS Code Extensions
+Import Cost: Displays the size of an imported package, helping you understand the impact on your bundle size.
+ES7 React/Redux/React-Native Snippets: Provides shortcuts for common React, Redux, and React Native code snippets to speed up development.
+HTML to JSX: Converts HTML code into JSX format, simplifying the process of integrating HTML into React components.
+ESLint: Analyzes code for potential errors and enforces coding standards, helping maintain code quality.
+Prettier: Automatically formats code to ensure a consistent style across your project, making it easier to read and maintain.
+     Configuring ESLint and Prettier for Better Code Quality
+Install Extensions: Add ESLint and Prettier extensions to your VS Code for real-time code analysis and formatting.
+Configuration Files: Create .eslintrc and .prettierrc files to define your coding rules and formatting preferences.
+Integrate with Project: Install eslint and prettier as dev dependencies and configure them in your project.
+Script Setup: Add scripts in package.json to run ESLint and Prettier, ensuring code is linted and formatted before commits.
+VS Code Settings: Configure VS Code settings to format code on save and show ESLint errors and warnings inline.
+         How React Works
+Virtual DOM and Real DOM: React uses a Virtual DOM, a lightweight copy of the Real DOM, to optimize updates and rendering.
+Rendering: Functions like createRoot() and render() are used to render React components into the Real DOM.
+Diffing Algorithm: React's diffing algorithm compares the Virtual DOM with the Real DOM to determine the minimal number of changes needed.
+Reconciliation: The process of updating the Real DOM with changes from the Virtual DOM, ensuring efficient and smooth updates.
+Efficient Updates: React updates only the parts of the DOM that have changed, rather than re-rendering the entire DOM, improving performance.
+     Understanding React Components and JSX
+Introduction to Components: Components are the building blocks of React applications, encapsulating UI elements and logic.
+Defining Components without JSX: Components can be defined using plain JavaScript functions that return React elements created with React.createElement().
+What is JSX?: JSX is a syntax extension for JavaScript that looks similar to HTML and is used to describe the UI structure in React.
+Defining Components with JSX: Components can be defined using JSX, which makes the code more readable and easier to write.
+Component Types: React components can be functional (stateless) or class-based (stateful), each serving different use cases in an application.
+
