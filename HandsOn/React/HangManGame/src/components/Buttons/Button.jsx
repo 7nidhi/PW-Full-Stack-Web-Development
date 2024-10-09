@@ -1,10 +1,11 @@
-function Button({text, onClickHandler}){
+import getButtonStyling from "./getButtonStyling";
+function Button({text, onClickHandler,styleType="primary"}){
     console.log(text);
 
     return(
         
         <button onClick={onClickHandler}
-        style={{'backgroundColor':'Red','color':'white'}}
+        className="{`px-4 py-2 ${getButtonStyling(styleType)} texr-white`}"
         >
             {text}
         </button>
