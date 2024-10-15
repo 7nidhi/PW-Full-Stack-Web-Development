@@ -1,6 +1,6 @@
 
 import './App.css'
-import TextInputForm from './components/TextInputForm/TextInputForm'
+import TextInputFormContainer from './components/TextInputForm/TextInputFormContainer'
 
 
 function App() {
@@ -8,12 +8,12 @@ function App() {
 
   return (
     <div>
-      <TextInputForm
+      <TextInputFormContainer
       />
     </div>
   
    
-  )
+  );
 }
 
 export default App
