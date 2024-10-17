@@ -4,16 +4,11 @@ import TextInputFormContainer from './components/TextInputForm/TextInputFormCont
 
 
 function App() {
-
-
   return (
     <div>
-      <TextInputFormContainer
-      />
+      <TextInputFormContainer />
     </div>
-  
-   
-  );
+  )
 }
 
 export default App
