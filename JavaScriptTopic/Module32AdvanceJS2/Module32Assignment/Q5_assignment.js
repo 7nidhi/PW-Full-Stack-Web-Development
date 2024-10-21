@@ -1,0 +1,3 @@
+/*
+Create a simple polyfill for the Array.includes method by the name of customIncludes.
+*/
