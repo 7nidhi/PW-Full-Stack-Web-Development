@@ -1,0 +1,4 @@
+/*
+Define a base class Shape with a method draw. Create two subclasses Circle and Rectangle that override
+the draw method. Demonstrate polymorphism using instances of these classes.
+*/
