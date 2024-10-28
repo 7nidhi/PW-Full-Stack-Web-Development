@@ -7,6 +7,14 @@ let output=arr.reduce((res,curr) =>{      //res=1,curr=2
 
 console.log(output);
 
+
+let arr1=[28,37,57,11];
+const output1=arr1.reduce((prev,cur) =>{
+    return prev>cur? prev :cur;
+});
+
+console.log(output1);
+
 //Filter Method
 // Given array have student marks.Filter out the marks of studnet that scored 90+.
 
