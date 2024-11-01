@@ -1,0 +1,16 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f9;
+}
+.container{
+    background-color: white;
+    max-width: 600px;
+    margin: 0px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}

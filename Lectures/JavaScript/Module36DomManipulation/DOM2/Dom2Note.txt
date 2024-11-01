@@ -1,1 +1,4 @@
-BOM- Browser Object Model- this is used to 
+BOM- Browser Object Model- this is used to change in browser object.
+Window Object
+Navigator object
+Screen/history /url bar
