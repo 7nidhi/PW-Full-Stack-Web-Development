@@ -1,11 +1,14 @@
-
+:root{
+    --body-background:#f4f4f9;
+    --btn-primary:#5cabff;
+}
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #f4f4f9;
+    background-color: var(--body-background);
 }
 .container{
     background-color: white;
@@ -13,4 +16,22 @@ body{
     margin: 0px auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+}
+h1{
+    text-align: center;
+}
+#todoInput{
+    width: 75%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+#addTodo{
+    padding: 10px 20px;
+    background-color: var(--btn-primary);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
 }
