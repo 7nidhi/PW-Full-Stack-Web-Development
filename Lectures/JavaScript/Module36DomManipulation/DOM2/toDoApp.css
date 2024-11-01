@@ -1,6 +1,8 @@
 :root{
     --body-background:#f4f4f9;
     --btn-primary:#5cabff;
+    --btn-secondary:#f1ee2d;
+    --btn-active:#4a90e2;
 }
 *{
     box-sizing: border-box;
@@ -52,4 +54,17 @@ li:hover{
 
 li:last-child{
     border-bottom: none;
+}
+.filterbtn{
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: var(--btn-secondary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.03s;
+}
+
+.filterbtn:hover{
+    background-color: var(--btn-active);
 }
