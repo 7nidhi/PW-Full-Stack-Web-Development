@@ -15,4 +15,4 @@ class User{
 let student1=new User("nidhi","nidhipal151@gmail.com");
 let student2=new User("saket","saketsaurabh@gmail.com");
 
-console.log(student2);
+console.log(student2.viewData());
