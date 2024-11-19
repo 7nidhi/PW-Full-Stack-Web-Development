@@ -21,3 +21,6 @@ class Admin extends user{
     }
 }
 let admin1=new Admin("Nidhi","nidhipal151@gmail.com");
+
+admin1.editData();
+console.log(DATA);
