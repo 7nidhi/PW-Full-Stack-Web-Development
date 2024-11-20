@@ -1,6 +1,6 @@
 /*
-Create a new class called admin which inherit from user. Add n new method called editData to admin that allows
-it to edit website.
+Create a new class called admin which inherit from user.
+Add n new method called editData to admin that allows it to edit website.
 */
 let DATA="Secret Information";
 class user{
@@ -21,6 +21,5 @@ class Admin extends user{
     }
 }
 let admin1=new Admin("Nidhi","nidhipal151@gmail.com");
-
 admin1.editData();
 console.log(DATA);
