@@ -4,12 +4,32 @@
 =This command will create new database in MongoDb.If this will already exist,this will select this DB.
 =It might be happen that it is a brand new DB then you might not see anything,so far we need to add atleast one collection to our DB.
 
->Inserting a collection in DB- db.collectionName.insertOne({...Object..});
+>Inserting a Single collection in DB- db.collectionName.insertOne({...Object..});
 =db.tasks.insertOne({name:"Get grocery"};)
 =db-It is current db in usage.
 =tasks-it is current target collection. if the collection doesnot exist, this will create.
 =insertOne-fuction present on collectionto insert a data.
 
->See all database- show dbs;
+>Bulk insert in Mongo-db.collectionName.insertMany([
+    {object1},
+    {Object2}
+])
+=db.user.insertMany([{name:"Nidhi"},{name:"Saket"}])
 
->
+>List all database- show dbs;
+
+>Creating new collection- db.createCollection(collectionname,options);
+=db.createCollection("user");
+=first parameter is collection name and second parameter is optional object which contains configuration that
+can help us to modify the collection.
+
+>Create Collection Capped-db.createCollection("user",{capped:true,size:100,max:3});
+=Collection capped-Capped collection are those which limits the size and the max number of documents it can contain.
+=If collection reaches th cap limits then old documents are automatically removed.
+=capped-boolean value if set to true makes the collection capped.
+=size-max size in bytes that the collection can hold.
+=max-max number of document collectioncan hold.
+
+>Drop a collection-db.collectionName.drop()
+=db.user.drop();
+=delete or drop the collection.
