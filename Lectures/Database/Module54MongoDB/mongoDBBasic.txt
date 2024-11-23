@@ -1,0 +1,15 @@
+/* MongoDb Basic Query*/
+
+>Creating new Database-  use newDB    //newDB is databse name
+=This command will create new database in MongoDb.If this will already exist,this will select this DB.
+=It might be happen that it is a brand new DB then you might not see anything,so far we need to add atleast one collection to our DB.
+
+>Inserting a collection in DB- db.collectionName.insertOne({...Object..});
+=db.tasks.insertOne({name:"Get grocery"};)
+=db-It is current db in usage.
+=tasks-it is current target collection. if the collection doesnot exist, this will create.
+=insertOne-fuction present on collectionto insert a data.
+
+>See all database- show dbs;
+
+>

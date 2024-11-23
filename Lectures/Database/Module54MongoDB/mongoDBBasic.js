@@ -1,1 +1,0 @@
-/* MongoDb Basic Query*/
