@@ -15,6 +15,12 @@
     {Object2}
 ])
 =db.user.insertMany([{name:"Nidhi"},{name:"Saket"}])
+=Mongo have max Batch size 1 lack collection limit.
+=By default the document are inserted in ordered fashion parallely by Mongo,with ordering allowed
+says if documentin the series fails to insert remaining all document will be not inserted.
+But if we set the ordered property false,then Mongo will not maintain order apart document insert fails,
+still remaining docs will be inserted and this will be faster as well.
+
 
 >List all database- show dbs;
 
