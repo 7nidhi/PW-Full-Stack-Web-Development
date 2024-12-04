@@ -8,7 +8,8 @@ The root node is the document itself.
 Nodes are connected in a parent-child hierarchy.
 Allows dynamic access and manipulation of the document.
  
-
+CSS Om- CSS model Objetc-
+CssOM+DOM= Render tree=things will display here only when they given. hidden things will not display.
      Methods of DOM :-
 getElementById():
 
