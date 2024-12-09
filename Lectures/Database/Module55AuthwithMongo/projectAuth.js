@@ -1,1 +1,1 @@
-/* Auth Project with MongoDB................................. */
+/* Auth Project with MongoDB............................................. */
