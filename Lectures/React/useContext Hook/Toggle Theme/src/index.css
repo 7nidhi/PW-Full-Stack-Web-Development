@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+ 
+}
+body{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
