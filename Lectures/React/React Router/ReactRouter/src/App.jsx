@@ -6,6 +6,10 @@ import About from './components/About';
 import Dashboard from './components/Dashboard';
 import Navbar from './components/Navbar';
 import ParamComponent from './components/ParamComponent';
+import Courses from './components/Courses';
+import MockTest from './components/MockTest';
+import Reports from './components/Reports';
+import NotFound from './components/NotFound';
 
 const router=createBrowserRouter(
   [
@@ -32,7 +36,30 @@ const router=createBrowserRouter(
           <Navbar/>
           <Dashboard/>
     
-        </div>
+        </div>,
+        children:[
+          {
+            path:'courses',
+            element:
+            <div>
+              <Courses/>
+            </div>
+          },
+          {
+            path:'mock-test',
+            element:
+            <div>
+              <MockTest/>
+            </div>
+          },
+          {
+            path:'reports',
+            element:
+            <div>
+              <Reports/>
+            </div>
+          }
+        ]
     },
     {
       path:"/student/:id",
@@ -41,6 +68,11 @@ const router=createBrowserRouter(
         <Navbar/>
         <ParamComponent/>
       </div>
+    },
+    {
+      path:'*',
+      element:
+      <NotFound/>
     }
    
 
