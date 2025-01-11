@@ -1,0 +1,5 @@
+Steps to create redux toolkit-
+1- create store
+2-wrap app component under provider
+3-create slice
+4-register reducer in store
