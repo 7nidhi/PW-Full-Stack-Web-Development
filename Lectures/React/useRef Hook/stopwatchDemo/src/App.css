@@ -1,0 +1,13 @@
+
+.btnStart{
+  background-color: green;
+  border-radius: 5px;
+}
+.btnStop{
+  background-color: red;
+  border-radius: 5px;
+}
+.btnReset{
+  background-color: blue;
+  border-radius: 5px;
+}
