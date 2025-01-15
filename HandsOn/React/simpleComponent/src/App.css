@@ -1,0 +1,15 @@
+#cat-family{
+    background-color: pink;
+    border: 1px solid black;
+    font-size:40px;
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+
+.container{
+    display: flex;        
+    gap: 20px;            
+    justify-content: center;
+}

@@ -1,0 +1,16 @@
+.card{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+#cat-image{
+    height: 200px;
+    width: 200px;
+    gap: 25px;
+}
+
+.cat-name{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}
