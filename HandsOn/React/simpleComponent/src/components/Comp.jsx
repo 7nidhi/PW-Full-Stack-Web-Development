@@ -3,7 +3,7 @@ import './Comp.css'
 
 const Comp = (props) => {
   return (
-    <div className="card">
+    <div className="card" onClick={props.onClick}>
     <img id='cat-image' src={props.image} alt={props.name}></img>
     <p className="cat-name">{props.name}</p>
     

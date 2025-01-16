@@ -14,10 +14,10 @@ function App() {
     <div id='cat-family'>Cat Family</div>
     <div className='container'>
     
-      <Comp name="Katty" image={cat1} />
-      <Comp name="Simmy" image={cat2}/>
-      <Comp name="Linty" image={cat3}/>
-      <Comp name="Mewvy" image={cat4}/>
+      <Comp name="Katty" image={cat1} onClick={()=>alert("Katty")} />
+      <Comp name="Simmy" image={cat2} onClick={()=>alert("Simmy")}/>
+      <Comp name="Linty" image={cat3} onClick={()=>alert("Linty")}/>
+      <Comp name="Mewvy" image={cat4} onClick={()=>alert("Mewvy")}/>
     </div>
     </div>
   )
