@@ -4,6 +4,7 @@ import circle_icon from '../assets/circle.png'
 import cross_icon from '../assets/cross.png'
 
 const TicTacToe = () => {
+    
   return (
     <div className='container'>
     <h1 className='tittle'>Tic Tac Toe By <span>React</span></h1>
