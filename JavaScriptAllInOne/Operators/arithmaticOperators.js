@@ -1,6 +1,14 @@
-let a=6, b=2;
+let a=6, b=2 ,c=5;
 console.log("a=",a ,"b=",b);
 console.log("a + b =" ,a+b);
 console.log("a - b =" ,a-b);
 console.log("a * b =" ,a*b);
 console.log("a / b =" ,a/b);
+console.log("a + b =" ,a+b);
+console.log("a % c =" ,a%c);
+console.log("a ** b =" ,a**b);
+let d=8,e=12;
+d++;
+console.log("d++ =",d);
+e--;
+console.log("e-- =",e);
